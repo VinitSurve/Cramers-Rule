@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script language="Javascript">
+        function determinant()
+        {
+        var a,b,c,d,e,f,g,h,i,j;
+        a=parseInt(f1.t1.value);
+        b=parseInt(f1.t2.value);
+        c=parseInt(f1.t3.value);
+        d=parseInt(f1.t4.value);
+        e=parseInt(f1.t5.value);
+        f=parseInt(f1.t6.value);
+        g=parseInt(f1.t7.value);
+        h=parseInt(f1.t8.value);
+        i=parseInt(f1.t9.value);
+        j=a*(e*i-f*h)-b*(d*i-f*g)+c*(d*h-g*e);
+        f1.t13.value=+j
+        }
+        function xvariable()
+        {
+            var a,b,c,d,e,f,g,h,i,j,k,l,x;
+        a=parseInt(f1.t1.value);
+        b=parseInt(f1.t2.value);
+        c=parseInt(f1.t3.value);
+        d=parseInt(f1.t4.value);
+        e=parseInt(f1.t5.value);
+        f=parseInt(f1.t6.value);
+        g=parseInt(f1.t7.value);
+        h=parseInt(f1.t8.value);
+        i=parseInt(f1.t9.value);
+        j=parseInt(f1.t10.value);
+        k=parseInt(f1.t11.value);
+        l=parseInt(f1.t12.value);
+        x=j*(e*i-f*h)-b*(k*i-f*l)+c*(k*h-e*l);
+        f1.t14.value=+x/(f1.t13.value)
+        }
+        function yvariable()
+        {
+            var a,b,c,d,e,f,g,h,i,j,k,l,y;
+        a=parseInt(f1.t1.value);
+        b=parseInt(f1.t2.value);
+        c=parseInt(f1.t3.value);
+        d=parseInt(f1.t4.value);
+        e=parseInt(f1.t5.value);
+        f=parseInt(f1.t6.value);
+        g=parseInt(f1.t7.value);
+        h=parseInt(f1.t8.value);
+        i=parseInt(f1.t9.value);
+        j=parseInt(f1.t10.value);
+        k=parseInt(f1.t11.value);
+        l=parseInt(f1.t12.value);
+        y=a*(k*i-f*l)-j*(d*i-f*g)+c*(d*l-k*g);
+        f1.t15.value=+y/(f1.t13.value)
+        }
+        function zvariable()
+        {
+            var a,b,c,d,e,f,g,h,i,j,k,l,y;
+        a=parseInt(f1.t1.value);
+        b=parseInt(f1.t2.value);
+        c=parseInt(f1.t3.value);
+        d=parseInt(f1.t4.value);
+        e=parseInt(f1.t5.value);
+        f=parseInt(f1.t6.value);
+        g=parseInt(f1.t7.value);
+        h=parseInt(f1.t8.value);
+        i=parseInt(f1.t9.value);
+        j=parseInt(f1.t10.value);
+        k=parseInt(f1.t11.value);
+        l=parseInt(f1.t12.value);
+        z=a*(e*l-k*h)-b*(d*l-k*g)+j*(d*h-e*g);
+        f1.t16.value=+z/(f1.t13.value)
+        }
+        </script>
+    </head>
+    <body>
+    <form name="f1">
+    <h2><font color="purple">Determinant</font></h2>
+    [&nbsp;<input type="text" size="1" name="t1">&nbsp;&nbsp;&nbsp;
+    <input type="text" size="1" name="t2">&nbsp;&nbsp;&nbsp;
+    <input type="text" size="1" name="t3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="1" name="t10"><br><br>
+    &nbsp;&nbsp;<input type="text" size="1" name="t4">&nbsp;&nbsp;&nbsp;
+    <input type="text" size="1" name="t5">&nbsp;&nbsp;&nbsp;
+    <input type="text" size="1" name="t6">&nbsp;&nbsp;&nbsp;=&nbsp;<input type="text" size="1" name="t11"><br><br>
+    &nbsp;&nbsp;<input type="text" size="1" name="t7">&nbsp;&nbsp;&nbsp;
+    <input type="text" size="1" name="t8">&nbsp;&nbsp;&nbsp;
+    <input type="text" size="1" name="t9">&nbsp;]
+    &nbsp;&nbsp;&nbsp;<input type="text" size="1" name="t12">
+    <h2><font color="purple">Result</font></h2><input type="text" name="t13"><br><br>
+    <input type="button" value="Determinant" onClick="determinant()"><br><br>
+    
+    
+    <h2><font color="purple">1<sup>st</sup> Variable</font></h2><br>
+    <input type="text" name="t14"><br><br>
+    <input type="button" value="Calculate" onClick="xvariable()"><br><br>
+    
+    
+    <h2><font color="purple">2<sup>nd</sup> Variable</font></h2>
+    <input type="text" name="t15"><br><br>
+    <input type="button" value="Calculate" onClick="yvariable()"><br><br>
+    
+    
+    <h2><font color="purple">3<sup>rd</sup> Variable</font></h2>
+    <input type="text" name="t16"><br><br>
+    <input type="button" value="Calculate" onClick="zvariable()"><br><br>
+    
+    <input type="reset" value="Clear">
+    
+    
+    
+    
+    
+    
+    
+    
+    </form>
+        
+    </body>
+</html>
